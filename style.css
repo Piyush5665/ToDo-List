@@ -159,6 +159,9 @@ body {
 
 
 
+/* || ADD TASK POP-UP */
+
+
 .pop_up_box {
     position: fixed;
     top: 0;
@@ -167,7 +170,7 @@ body {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
-    border: 2px solid black;
+    
 }
 
 
@@ -178,7 +181,50 @@ body {
     z-index: 3;
     width: 100%;
     max-width: 400px;
-    justify-content: center;
+    min-height: 500px;
+    /* justify-content: center; */
     transform: translate(-50%, -50%) scale(0.95);
+
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background:#fff;
+    color: black;
     
 }
+
+.pop_up_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+
+.pop_up_header i{
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+/* .popup-box,
+.popup {
+  opacity: 1;
+  pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+
+.popup-box.show,
+.popup-box.show .popup {
+  opacity: 1;
+  pointer-events: auto;
+}
+.popup-box.show .popup {
+  transform: translate(-50%, -50%) scale(1);
+} */
