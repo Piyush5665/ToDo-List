@@ -162,7 +162,7 @@ body {
 /* || ADD TASK POP-UP */
 
 
-.pop_up_box {
+.popup_box {
     position: fixed;
     top: 0;
     left: 0;
@@ -174,7 +174,7 @@ body {
 }
 
 
-.pop_up_box .pop_up{
+.popup_box .popup{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -190,18 +190,37 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     background:#fff;
     color: black;
+    font-size: 20px;
     
 }
 
-.pop_up_header{
+.popup_header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.25px solid rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    font-weight: 500;
 }
 
-.pop_up_header i{
-    font-size: 30px;
+.popup_header i{
+    font-size: 28px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+
+
+.popup_title form{
+    display: flex;
+    flex-direction: column;
+}
+
+#popup_title{
+    width: 335px;
+    height: 50px;
+    font-size: 19px;
+    padding: 0 15px;
 }
 
 
