@@ -174,7 +174,8 @@ body {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
-    display: none;
+    transform: scale(0);
+    
 }
 
 
@@ -195,6 +196,8 @@ body {
     background: #fff;
     color: black;
     font-size: 20px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 
 }
 
@@ -320,7 +323,8 @@ form :where(input, textarea):focus {
 
 .task_update .options{
    
-    display: none;  
+    color: black;
+    /* display: none;   */
 }
 
 .task_update_menu{
@@ -329,9 +333,8 @@ form :where(input, textarea):focus {
     color: black;
     width: 100px;
     z-index: 2;
-    
     transform: translateY(-47%);
-    /* display: none; */
+    display: none;
 }
 
 .task_update_menu ul{
