@@ -14,6 +14,10 @@ body {
     height: 200vh;
 }
 
+.ptr{
+    cursor: pointer;
+}
+
 
 .navbar {
     height: 80px;
@@ -170,11 +174,11 @@ body {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.4);
-    
+    display: none;
 }
 
 
-.popup_box .popup{
+.popup_box .popup {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -188,13 +192,13 @@ body {
     /* border: 2px solid black; */
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background:#fff;
+    background: #fff;
     color: black;
     font-size: 20px;
-    
+
 }
 
-.popup_header{
+.popup_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,7 +207,7 @@ body {
     font-weight: 500;
 }
 
-.popup_header i{
+.popup_header i {
     font-size: 28px;
     opacity: 0.5;
     cursor: pointer;
@@ -211,39 +215,144 @@ body {
 
 
 
-.popup_title form{
+.popup_title form {
     display: flex;
     flex-direction: column;
+    gap: 24px;
+    padding: 0 25px;
+    margin-block: 15px;
 }
 
-#popup_title{
-    width: 335px;
+
+
+#popup_title {
+    
     height: 50px;
-    font-size: 19px;
+    
     padding: 0 15px;
+    display: block;
+    border: 0.5px solid rgb(0, 0, 0,0.5);
+    
+}
+
+textarea {
+    
+    height: 150px;
+    
+    padding: 7px 15px;
+
+
+    resize: none;
+    font-family: inherit;
+}
+
+form :where(input, textarea){
+    
+    outline: none;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-top: 4px;
+    font-size: 19px;
+    width: 350px;
+}
+
+form :where(input, textarea):focus {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.11);
+    outline: none;
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-top: 4px;
+    font-size: 19px;
+    width: 350px;
+}
+
+
+.add_task{
+    background: #2bbb67;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    height: 45px;  
+    font-size: 18px;  
+    border-radius: 6px;
+}
+
+
+
+.task{
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    color: black;
+    box-shadow: 11px 13px 12px rgba(0, 0, 0, 0.151);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+.task:hover{
+    box-shadow: 11px 13px 12px rgba(0, 0, 0, 0.215);
+}
+
+.task h2{
+    font-weight: 500;
+}
+
+.task p{
+    
+    color: rgba(0, 0, 0,0.7);
+}
+
+.task_hr{
+    border: 1px solid rgba(0, 0, 0,0.2);
+    
+}
+
+.task_time{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+
+.task_update .options{
+   
+    display: none;  
+}
+
+.task_update_menu{
+    height: 80px;
+    background: white;
+    color: black;
+    width: 100px;
+    z-index: 2;
+    
+    transform: translateY(-47%);
+    /* display: none; */
+}
+
+.task_update_menu ul{
+    list-style-type: none;
+    padding: 10px 0px 10px 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.task_update_menu ul li{
+    margin-bottom: 8px;
+}
+
+.task_update_menu ul li:hover{
+    color: #2bbb67;
+}
+
+.task_update_menu li i{
+    margin-right: 6px;
 }
 
 
 
 
-
-
-
-
-
-/* .popup-box,
-.popup {
-  opacity: 1;
-  pointer-events: none;
-  transition: all 0.25s ease;
-}
-
-
-.popup-box.show,
-.popup-box.show .popup {
-  opacity: 1;
-  pointer-events: auto;
-}
-.popup-box.show .popup {
-  transform: translate(-50%, -50%) scale(1);
-} */
