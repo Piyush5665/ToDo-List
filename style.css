@@ -197,7 +197,7 @@ body {
     color: black;
     font-size: 20px;
     opacity: 0;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -278,6 +278,7 @@ form :where(input, textarea):focus {
     height: 45px;  
     font-size: 18px;  
     border-radius: 6px;
+    
 }
 
 
