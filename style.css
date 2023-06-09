@@ -328,14 +328,19 @@ form :where(input, textarea):focus {
     /* display: none;   */
 }
 
+.none{
+    display: none;
+}
+
 .task_update_menu{
     height: 80px;
     background: white;
     color: black;
     width: 100px;
     z-index: 2;
-    transform: translateY(-47%);
-    display: none;
+    transform: translateY(-47%) ;
+    
+    transition: all 0.25s ease-in-out;
 }
 
 .task_update_menu ul{
