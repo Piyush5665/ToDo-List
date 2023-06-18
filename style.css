@@ -231,6 +231,7 @@ body {
 #popup_title {
     
     height: 50px;
+    display: inline;
     
     padding: 0 15px;
     display: block;
@@ -300,14 +301,21 @@ form :where(input, textarea):focus {
 .task:hover{
     box-shadow: 11px 13px 12px rgba(0, 0, 0, 0.215);
 }
+.task_header{
+    overflow: auto;
+}
 
 .task h2{
     font-weight: 500;
+    word-wrap: break-word;
 }
 
 .task p{
     
     color: rgba(0, 0, 0,0.7);
+    word-wrap: break-word;
+    
+    
 }
 
 .task_hr{
